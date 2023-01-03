@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/rakesh/static/css/main.dce38ced.css",
-    "main.js": "/rakesh/static/js/main.983816d0.js",
+    "main.js": "/rakesh/static/js/main.93e5d2a2.js",
     "static/js/787.1ed0c42c.chunk.js": "/rakesh/static/js/787.1ed0c42c.chunk.js",
     "static/media/ProfileP.jpg": "/rakesh/static/media/ProfileP.19c3cab868d279186e1e.jpg",
     "static/media/helvetica-neu.ttf": "/rakesh/static/media/helvetica-neu.8a19678078a6b21c8057.ttf",
@@ -11,11 +11,11 @@
     "static/media/r.svg": "/rakesh/static/media/r.1ef889da043dded7ad1e56a453da3b07.svg",
     "index.html": "/rakesh/index.html",
     "main.dce38ced.css.map": "/rakesh/static/css/main.dce38ced.css.map",
-    "main.983816d0.js.map": "/rakesh/static/js/main.983816d0.js.map",
+    "main.93e5d2a2.js.map": "/rakesh/static/js/main.93e5d2a2.js.map",
     "787.1ed0c42c.chunk.js.map": "/rakesh/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.dce38ced.css",
-    "static/js/main.983816d0.js"
+    "static/js/main.93e5d2a2.js"
   ]
 }
