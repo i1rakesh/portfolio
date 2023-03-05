@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/rakesh/portfolio/static/css/main.d850931a.css",
+    "main.js": "/rakesh/portfolio/static/js/main.c8192014.js",
+    "static/js/787.1ed0c42c.chunk.js": "/rakesh/portfolio/static/js/787.1ed0c42c.chunk.js",
+    "static/media/ProfileP.jpg": "/rakesh/portfolio/static/media/ProfileP.19c3cab868d279186e1e.jpg",
+    "static/media/helvetica-neu.ttf": "/rakesh/portfolio/static/media/helvetica-neu.8a19678078a6b21c8057.ttf",
+    "static/media/LaBelleAurore.woff": "/rakesh/portfolio/static/media/LaBelleAurore.9c5433c64baa43d1d274.woff",
+    "static/media/CoolveticaRg-Regular.woff2": "/rakesh/portfolio/static/media/CoolveticaRg-Regular.7d1f3b1dd46ad6557a17.woff2",
+    "static/media/logo-r.svg": "/rakesh/portfolio/static/media/logo-r.b536e3f62cadd40896efa6f9ba5f8c13.svg",
+    "static/media/r.svg": "/rakesh/portfolio/static/media/r.1ef889da043dded7ad1e56a453da3b07.svg",
+    "index.html": "/rakesh/portfolio/index.html",
+    "main.d850931a.css.map": "/rakesh/portfolio/static/css/main.d850931a.css.map",
+    "main.c8192014.js.map": "/rakesh/portfolio/static/js/main.c8192014.js.map",
+    "787.1ed0c42c.chunk.js.map": "/rakesh/portfolio/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d850931a.css",
+    "static/js/main.c8192014.js"
+  ]
+}
