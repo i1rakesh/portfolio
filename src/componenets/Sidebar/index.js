@@ -2,19 +2,19 @@ import { Link, NavLink } from 'react-router-dom'
 import './index.scss'
 import rLogo from '../../assets/images/r.svg'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import {faEnvelope, faHome, faUser } from '@fortawesome/free-solid-svg-icons'
-import {faLinkedin, faGithub} from '@fortawesome/free-brands-svg-icons'
+import {faEnvelope, faHome, faUser, faStar } from '@fortawesome/free-solid-svg-icons'
 
 const Slidebar = () => {
   return (
+    <div className='nav-wrapper'>
     <div className="nav-bar">
-      <Link className="logo" to="/">
+      {/* <Link className="logo" to="/">
         <img className="sub-logo" src={rLogo} alt="logo-sub" />
         
-      </Link>
+      </Link> */}
       <nav>
-        <NavLink exact="true" activeclassname="active" to="/rakesh" className="active1">
-          <FontAwesomeIcon icon={faHome} color="#4d4d4d" />
+        <NavLink exact="true" activeclassname="active" to="/" className="active1">
+          <FontAwesomeIcon icon={faHome} color="#4d4d4d" className='fa-lg' />
         </NavLink>
         <NavLink
           exact="true"
@@ -22,7 +22,7 @@ const Slidebar = () => {
           className="about-link"
           to="/about"
         >
-          <FontAwesomeIcon icon={faUser} color="#4d4d4d" />
+          <FontAwesomeIcon icon={faUser} color="#4d4d4d" className='fa-lg' />
         </NavLink>
         <NavLink
           exact="true"
@@ -30,21 +30,21 @@ const Slidebar = () => {
           className="contact-link"
           to="/contact"
         >
-          <FontAwesomeIcon icon={faEnvelope} color="#4d4d4d" />
+          <FontAwesomeIcon icon={faEnvelope} color="#4d4d4d" className='fa-lg' />
+        </NavLink>
+        <NavLink
+          exact="true"
+          activeclassname="active"
+          className="project-link"
+          to="/projects"
+        >
+          <FontAwesomeIcon icon={faStar} color="#4d4d4d" className='fa-lg' />
         </NavLink>
       </nav>
+      
       <ul>
-      <li className='lipehla'>
-      <a  className='Linkdin' target="_blank" rel='noreferrer' href="./">
-        <FontAwesomeIcon icon={faLinkedin} color="#4d4d4e" />
-      </a>
-      </li>
-      <li>
-      <a className='Github' target="_blank" rel='noreferrer' href="./">
-        <FontAwesomeIcon icon={faGithub} color="#4d4d4e" />
-      </a>
-      </li>
       </ul>
+    </div>
     </div>
   )
 }

@@ -1,16 +1,22 @@
 .about-page {
+  display: flex;
+  justify-content: space-between;
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 100px;
+  ul h2 {
+    text-align: left;
+    font-weight: 32px;
+  }
   .text-zone {
-    position: absolute;
-    left: 20%;
-    top: 10%;
-    transform: translate(-50%);
-    width: 35%;
-    vertical-align: middle;
-    display: inline;
-    max-height: 90%;
-
+    transform: translateY(-50);
+    width: 60%;
+    color: antiquewhite;
+    align-self: center;
+    margin-top: 5rem;
     h1 {
-      font-size: 53px;
+      font-size: 40px;
       font-family: 'coolevitica';
       color: #fff;
       font-weight: 400;
@@ -46,7 +52,7 @@
       color: #fff;
       font-family: sans-serif;
       font-weight: 300;
-      min-width: 60vw ;
+      min-width: 60vw;
       animation: pulse 1s;
 
       &:nth-of-type(1) {
@@ -59,28 +65,37 @@
         animation-delay: 1.3s;
       }
     }
+    .edu-data {
+      margin-left: 0;
+    }
+    .text-zone ul {
+      width: 40vw;
+      margin: 0;
+      list-style: none;
+    }
+    .edu-data {
+      display: flex;
+    }
   }
   .card {
-    width: 25vw;
-    height: 35vh;
+    width: 50rem;
+    height: 35rem;
     float: right;
-    margin-right: 5vw;
-    margin-top: 20vh;
     background: #f0f0f0;
+    margin-right: 5vw;
     border-radius: 10px;
     text-align: center;
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
-   }
-   
-   .card:hover {
+  }
+
+  .card:hover {
     -webkit-box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.623);
-            box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.623);
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.623);
     background-color: #4bb8ff;
-    
-   }
-   
-   .card .blob {
+  }
+
+  .card .blob {
     height: 10px;
     width: 75%;
     font-family: 'coolevitica';
@@ -90,12 +105,12 @@
     visibility: visible;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
-   }
-   
-   .card:hover .blob {
+  }
+
+  .card:hover .blob {
     height: 0;
-   }
-   .card .img  {
+  }
+  .card .img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -106,73 +121,99 @@
     border-radius: 50%;
     font-size: 11px;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
-   }
-   
-   .card:hover .img {
+  }
+
+  .card:hover .img {
     width: 100%;
     height: 70%;
     border-radius: 10px 0 0;
     margin: 0 auto;
-    
+
     background-color: #f0f0f0;
     z-index: 99999;
-   }
-   
-   .card h2 {
+  }
+
+  .card h2 {
     padding: 15px 10px;
     font-size: 25px;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     -webkit-transition: all 0.1s;
     transition: all 0.1s;
     z-index: -99;
     line-height: 17px;
-   }
-   
-   .card span {
+  }
+
+  .card span {
     font-size: 18px;
-   }
-   
-   .card:hover h2 {
+  }
+
+  .card:hover h2 {
     opacity: 0;
     width: 100%;
     position: absolute;
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
-   }
-   
-   .card>p {
+  }
+
+  .card > p {
     opacity: 0;
     -webkit-transition: all 0.75s;
     transition: all 0.75s;
-   }
-   
-   .card>p>.icon {
+  }
+
+  .card > p > .icon {
     padding: 5px;
-   }
-   
-   .card:hover>p {
+  }
+
+  .card:hover > p {
     position: absolute;
     bottom: 15px;
     left: 35px;
     opacity: 1;
     -webkit-transition: all 0.1s;
     transition: all 0.1s;
-   }
+  }
 }
-.icons{
+.icons {
   display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  padding-top: 0;
   font-size: 5rem;
-  column-gap: 5vw;
-  margin-left: 4vw;
+  column-gap: 5rem;
   margin-top: 2vh;
- }
- .Linkdin, .Github, .Instagram{
-  transform: rotate(-30deg);
- }
+}
+@media only screen and (max-width: 950px) {
+  .about-page {
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+  }
+  .about-page .text-zone {
+    margin-left: 0;
+    width: 80%;
+    h1 {
+      color: azure;
+      font-size: 50px;
+      margin: 0;
+      font-family: 'coolvetica';
+      font-weight: 400;
+    }
+  }
+  .about-page .card {
+    align-self: center;
+    width: 70%;
+    margin-bottom: 10rem;
+    margin-right: 0px;
+  }
+  .about-page .text-zone .edu-data {
+    display: block;
+  }
+}

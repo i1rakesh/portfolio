@@ -1,18 +1,21 @@
 .home-page{
+    display: flex;
+    justify-content: space-between;
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
     .text-zone{
-        position: absolute;
-        left: 10%;
-        top: 20%;
         transform:translateY(-50);
-        width: 75%;
-        min-height: 90%;
+        width: 80%;
         color: antiquewhite;
+        align-self: center;
+        margin-left: 10rem;
+        margin-top: 5rem;
     }
     
         h1{
             color: azure;
-            width: 50%;
-            font-size: 58px;
+            font-size: 50px;
             margin: 0;
             font-family: 'coolvetica';
             font-weight: 400;
@@ -24,7 +27,7 @@
                 font-size: 25px;
                 position: absolute;
                 margin-top: -40px;
-                left: 15px;
+                left: 40px;
             }
 
             &:after{
@@ -33,8 +36,8 @@
                 color: #008A5A;
                 font-size: 25px;
                 position: absolute;
-                margin-top: 18px;
-                margin-left: 20px;
+                margin-top: 40px;
+
                 animation: fadeIn 1s 1.7s backwards;
                 opacity: 0.6s;
             }
@@ -42,12 +45,13 @@
         }
         h2{
             color: #8d8d8d;
-            margin-top: 20px;
+            margin-top: 50px;
             font-weight: 400;
-            font-size: 15px;
+            font-size: 18px;
             font-family: sans-serif;
             letter-spacing: 3px;
             animation: fadeIn 1s 1.8s backwards;
+            text-align: start;
 
         }
 
@@ -73,3 +77,167 @@
 
         }
     }
+    .home-page .card {
+        width: 50rem;
+        height: 35rem;
+        float: right;
+        margin-right: 5vw;
+        margin-top: 20vh;
+        background: #f0f0f0;
+        border-radius: 10px;
+        text-align: center;
+        -webkit-transition: all 0.5s;
+        transition: all 0.5s;
+       }
+       .card:hover {
+        -webkit-box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.623);
+                box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.623);
+        background-color: #4bb8ff;
+        
+       }
+       
+       .card .blob {
+        height: 10px;
+        width: 75%;
+        font-family: 'coolevitica';
+        border-radius: 0 0 30px 30px;
+        margin: 0 auto;
+        background-color: #4bb8ff;
+        visibility: visible;
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s;
+       }
+       
+       .card:hover .blob {
+        height: 0;
+       }
+       .card .img  {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        margin: 30px auto 10px auto;
+        width: 100px;
+        height: 100px;
+        background-color: #4bb8ff;
+        border-radius: 50%;
+        font-size: 11px;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-transition: all 0.5s;
+        object-fit:cover;
+        transition: all 0.5s;
+       }
+       
+       .card:hover .img {
+        width: 100%;
+        height: 70%;
+        border-radius: 10px 0 0;
+        margin: 0 auto;
+        
+        background-color: #f0f0f0;
+       }
+       
+       .card h2 {
+        padding: 15px 10px;
+        font-size: 30px;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        -webkit-transition: all 0.1s;
+        transition: all 0.1s;
+        line-height: 17px;
+        text-align: center;
+       }
+       
+       .card span {
+        font-size: 18px;
+       }
+       
+       .card:hover h2 {
+        opacity: 0;
+        width: 100%;
+        position: absolute;
+        -webkit-transition: all 0.5s;
+        transition: all 0.5s;
+       }
+       .card>p {
+        opacity: 0;
+        -webkit-transition: all 0.75s;
+        transition: all 0.75s;
+       }
+       
+       .card:hover>p {
+        position: absolute;
+        bottom: 15px;
+        left: 35px;
+        opacity: 1;
+        -webkit-transition: all 0.1s;
+        transition: all 0.1s;
+       }
+    
+    .icons{
+      display: flex;
+      justify-content: space-between;
+      padding: 2rem;
+      padding-top: 0;
+      font-size: 5rem;
+      column-gap: 5rem;
+      margin-top: 2vh;
+     }
+     button{
+        background:inherit;
+     }
+    .buttons{
+     display: flex;
+     justify-content:space-evenly;
+     gap: 1rem;
+    }
+     @media only screen and (max-width: 950px) {
+        .home-page{
+            display: flex;
+            flex-direction: column;
+            overflow-y: scroll;
+        }
+        .home-page .text-zone{
+           margin-left: 0;
+           h1{
+            color: azure;
+            font-size: 50px;
+            margin: 0;
+            font-family: 'coolvetica';
+            font-weight: 400;
+
+            &::before{
+                content: '<h1>';
+                font-family: 'la belle Aurore';
+                color: #008A5A;
+                font-size: 25px;
+                position: absolute;
+                margin-top: -40px;
+                left: 40px;
+            }
+
+            &:after{
+                content: '<h1>';
+                font-family: 'la belle Aurore';
+                color: #008A5A;
+                font-size: 25px;
+                position: absolute;
+                margin-top: 10px;
+
+                animation: fadeIn 1s 1.7s backwards;
+                opacity: 0.6s;
+            }
+
+        }
+        }
+        .home-page .card {  
+            align-self: center;
+            width: 75%;
+            margin-bottom: 10rem;
+            margin-right: 0px;
+        }
+        
+      }

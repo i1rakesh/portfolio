@@ -1,0 +1,164 @@
+body{
+  overflow-y: scroll;
+  margin-bottom: 20vh;
+}
+.text-zone{
+  margin-top: 7vh;
+  width: 100%; 
+}
+.bottom-bar{
+  display:none;
+}
+.project-page{
+  margin: 0;
+}
+h1{
+  font-family: 'coolvetica';
+  font-size: 5rem;
+  color: #fff;
+  letter-spacing: 1rem;
+}
+h2{
+  font-family: 'coolvetica';
+  text-align: center;
+  letter-spacing: 0.5rem;
+  font-size: 2rem;
+}
+.first-wrapper{
+  display: flex;
+  gap: 10vw;
+}
+.upper-wrapper{
+  display: flex;
+  gap: 10vw;
+}
+.lower-wrapper{
+  display: flex;
+  gap: 10vw;
+  
+}
+.project-card a{
+  text-decoration: none;
+  background: green;
+  padding: 5px;
+  border-radius: 1rem;
+  font-weight: bold;
+  color: black;
+  font-size: 1.5rem;
+  display: flex;
+  gap: 1rem;
+  align-self: center;
+  color: #fff;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.project-card{
+  width: 20vw;
+  max-height: fit-content;
+  background: white;
+  padding: 2rem;
+  border-radius: 2rem;
+}
+.project-card h3{
+  color: rgb(87, 87, 87);
+  font-size: 16px;
+  text-align:justify;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.project-card img{
+  width: 20vw;
+  height: 20rem;
+  border-radius: 1rem;
+}
+.links{
+  display: flex;
+  justify-content: space-between;
+}
+@media only screen and (max-width: 1480px) {
+  .project-card{
+    width: 30vw;
+    background: white;
+    padding: 2rem;
+    border-radius: 2rem;
+  }
+  .project-card img{
+    width: 30vw;
+  }
+  .first-wrapper{
+  display:grid;
+  justify-content: center;
+  gap: 26rem;
+}
+.upper-wrapper{
+  display: flex;
+  gap: 20vw;
+}
+.lower-wrapper{
+  display: flex;
+  gap: 20vw;
+}
+}
+@media only screen and (max-width: 820px) {
+  .project-card{
+    width: 38vw;
+    background: white;
+    padding: 2rem;
+    border-radius: 2rem;
+  }
+  .project-card img{
+    width: 35vw;
+  }
+  .first-wrapper{
+    display:grid;
+    gap: 20rem;
+    float: left;
+    
+  }
+  .upper-wrapper{
+    display: flex;
+    gap: 8rem;
+  }
+  .lower-wrapper{
+    display: flex;
+    gap: 8rem;
+  }
+  .bottom-bar{
+    height: 15vh;
+    display:block;
+  }
+  }
+  @media only screen and (max-width: 530px) {
+    .project-card{
+      width: 70vw;
+      background: white;
+      padding: 2rem;
+      border-radius: 2rem;
+    }
+    .project-card img{
+      width: 70vw;
+    }
+    .first-wrapper{
+      display:grid;
+      gap: 40rem;
+      margin-left: 0;
+      float: left;
+      margin-left: 2rem;
+    }
+    .project-page{
+      margin-left: 0;
+      align-content: center;
+      float: left;
+    }
+    .upper-wrapper{
+      display: grid;
+      gap: 20rem;
+    }
+    .lower-wrapper{
+      display: grid;
+      gap: 20rem; 
+    }
+    .bottom-bar{
+      height: 5vh;
+      display:block;
+    }
+    }

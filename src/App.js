@@ -4,14 +4,16 @@ import Layout from './componenets/Layout'
 import Home from './componenets/Home'
 import About from './componenets/About'
 import Contact from "./componenets/Contact";
+import Projects from "./componenets/Projects";
 function App() {
   return (
     <>
     <Routes>
       <Route path="/" element={<Layout/>} >
-      <Route path="/rakesh" index element ={<Home/>}/>
-      <Route path="About" element ={<About/>}/>
-      <Route path="Contact" element ={<Contact/>}/>
+      <Route path="/" index element ={<Home/>}/>
+      <Route path="/about" element ={<About/>}/>
+      <Route path="/contact" element ={<Contact/>}/>
+      <Route path="/projects" element ={<Projects/>}/>
       </Route>
     </Routes>
       </>

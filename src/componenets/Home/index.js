@@ -1,6 +1,13 @@
 import { Link } from 'react-router-dom'
-import Logo from '../Logo'
 import './index.scss'
+import profile from '../../assets/images/cartoon-profile.jpg'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import Pdf from '../../assets/Rakesh_kumar_resume.pdf'
+import {
+  faLinkedin,
+  faGithub,
+  faInstagram,
+} from '@fortawesome/free-brands-svg-icons'
 const Home = () => {
   return (
     <div className="container home-page">
@@ -8,18 +15,63 @@ const Home = () => {
         <h1>
           Hi,
           <br />
-          I'm
-          
-          Rakesh
+          I'm Rakesh
           <br />
-          Web developer
+          Software developer
         </h1>
-        <h2>Front-End Developer/ C++ Programmer/ UI designer</h2>
+        <h2>Full Stack Developer/Software Developer</h2>
+        <div className='buttons'>
         <Link to="/contact" className="flat-button">
           Contact me{' '}
         </Link>
+        <a
+          href={Pdf}
+          download="Rakesh_Resume"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <button className="flat-button">Download My Resume</button>
+        </a>
+        </div>
       </div>
-      <Logo/>
+
+      <div className="card">
+        <div className="blob"></div>
+        <span>
+          <img src={profile} alt="" className="img" />
+        </span>
+        <h2>
+          Rakesh<br></br>
+          <span>kumar</span>
+        </h2>
+        <div className="icons">
+          <a
+            className="Linkdin"
+            target="_blank"
+            rel="noreferrer"
+            href="https://www.linkedin.com/in/rakesh-kumar-3b59901a3/"
+          >
+            <FontAwesomeIcon icon={faLinkedin} color="#4d4d4e" />
+          </a>
+          <a
+            className="Github"
+            target="_blank"
+            rel="noreferrer"
+            href="https://github.com/i1rakesh"
+          >
+            <FontAwesomeIcon icon={faGithub} color="#4d4d4e" />
+          </a>
+          <a
+            className="Instagram"
+            target="_blank"
+            rel="noreferrer"
+            href="https://www.instagram.com/_i_rakesh/"
+          >
+            <FontAwesomeIcon icon={faInstagram} color="#4d4d4e" />
+          </a>
+        </div>
+      </div>
+
     </div>
   )
 }

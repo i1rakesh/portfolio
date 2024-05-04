@@ -29,9 +29,7 @@ const Contact = () => {
             Contact me
           </h1>
           <p>
-            I am interested in freelance opportunities - especially on ambitious
-            or large projects. However, if you have any other requests or
-            questions, don't hesitate to contact me using below form either.
+            I am open to work as Frontend developer/Software Developer. Just send your details in below form and I will contact you.
           </p>
           <div className="contact-form">
             <form ref={form} onSubmit={sendEmail}>
@@ -63,13 +61,12 @@ const Contact = () => {
                   ></textarea>
                 </li>
                 <li>
-                  <input type="submit" className="flat-button" value="SEND" />
+                  <input type="submit" className="flat-button" value="Send" />
                 </li>
               </ul>
             </form>
           </div>
-        </div>
-        
+        </div>  
       </div>
       <Loader type="pacman" />
     </>
