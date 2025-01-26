@@ -12,14 +12,8 @@ const About = () => {
       <div className="text-zone">
         <h1>About me</h1>
         <p>
-          I've excelled in various aspects of software engineering, contributing
-          significantly to the development of robust and scalable systems.
-          Leveraging Node.js and PostgreSQL, I've crafted backend solutions
-          prioritizing reliability and performance. My commitment to security is
-          evident through the implementation of JWT token authentication,
-          enhancing application security. On the frontend, I've demonstrated
-          mastery in React.js, Redux/Redux Toolkit, and Material UI, enabling
-          the creation of responsive and visually appealing user interfaces.
+        Software Developer with expertise in React.js, JavaScript (ES6+), Node.js, PostgreSQL, Python, and MongoDB.
+        Experienced in integrating Google Maps services and committed to learning and adapting to new technologies to deliver innovative solutions.
         </p>
         <div className="education-list">
           <ul>

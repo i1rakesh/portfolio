@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.7c0bf491.css",
+    "main.js": "/static/js/main.41065119.js",
+    "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
+    "static/media/mobile.png": "/static/media/mobile.68e08af74b61b0ba3083.png",
+    "static/media/Twigal.png": "/static/media/Twigal.3f12acc464a7190599f2.png",
+    "static/media/rakesh_kumar_resumeV3.pdf": "/static/media/rakesh_kumar_resumeV3.6613cd58d39e6a895b19.pdf",
+    "static/media/dashboard.png": "/static/media/dashboard.f0a1d9110a5d3890f0d8.png",
+    "static/media/cartoon-profile.jpg": "/static/media/cartoon-profile.119f40efd2872a96b1da.jpg",
+    "static/media/docs.png": "/static/media/docs.0dd552e45ba8c672707b.png",
+    "static/media/helvetica-neu.ttf": "/static/media/helvetica-neu.8a19678078a6b21c8057.ttf",
+    "static/media/LaBelleAurore.woff": "/static/media/LaBelleAurore.9c5433c64baa43d1d274.woff",
+    "static/media/CoolveticaRg-Regular.woff2": "/static/media/CoolveticaRg-Regular.7d1f3b1dd46ad6557a17.woff2",
+    "static/media/r.svg": "/static/media/r.1ef889da043dded7ad1e56a453da3b07.svg",
+    "index.html": "/index.html",
+    "main.7c0bf491.css.map": "/static/css/main.7c0bf491.css.map",
+    "main.41065119.js.map": "/static/js/main.41065119.js.map",
+    "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7c0bf491.css",
+    "static/js/main.41065119.js"
+  ]
+}

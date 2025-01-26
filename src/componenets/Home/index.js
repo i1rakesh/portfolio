@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 import './index.scss'
 import profile from '../../assets/images/cartoon-profile.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import Pdf from '../../assets/Rakesh_kumar_resume.pdf'
+import Pdf from '../../assets/rakesh_kumar_resumeV3.pdf'
 import {
   faLinkedin,
   faGithub,
@@ -19,7 +19,7 @@ const Home = () => {
           <br />
           Software developer
         </h1>
-        <h2>Full Stack Developer/Software Developer</h2>
+        <h2>Software Developer</h2>
         <div className='buttons'>
         <Link to="/contact" className="flat-button">
           Contact me{' '}
@@ -30,7 +30,7 @@ const Home = () => {
           target="_blank"
           rel="noreferrer"
         >
-          <button className="flat-button">Download My Resume</button>
+          <button style={{cursor:"pointer"}} className="flat-button">Download My Resume</button>
         </a>
         </div>
       </div>
